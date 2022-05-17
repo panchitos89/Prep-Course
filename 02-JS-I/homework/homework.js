@@ -35,29 +35,25 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  let = x + y;
-  return let;
+  return x + y;
 }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
- let = x - y;
- return let;
+ return x - y;
 }
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
- let = x * y;
- return let;
+ return x * y;
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-  let = x / y;
-  return let;
+  return x / y;
 }
 
 function sonIguales(x, y) {
@@ -227,11 +223,13 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if (letra === a, e, i ,o ,u) {
+  if (letra.length > 1) {
+    return "Dato incorrecto";
+  }
+  if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
     return "Es vocal";
-  } else "Dato incorrecto";
-}
-
+  } else { return "Dato incorrecto"}
+  }
 
 // No modificar nada debajo de esta línea
 // --------------------------------
